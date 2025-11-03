@@ -8,19 +8,17 @@
 </head>
 <body>
   <main class="app" role="main">
-    <!-- ===== Header Section ===== -->
-    <header class="header">
+    <header>
       <div class="title">
-        <h1 class="game-title">Tic-Tac-Toe</h1>
+        <h1>Tic-Tac-Toe</h1>
         <p class="lead">Mobile-responsive • 2 players on one device</p>
       </div>
       <div class="controls">
-        <button class="btn" id="restartBtn" type="button">🔄 Restart</button>
-        <button class="btn" id="resetScoreBtn" type="button">🧹 Reset Scores</button>
+        <button class="btn" id="restartBtn" type="button">Restart</button>
+        <button class="btn" id="resetScoreBtn" type="button">Reset Scores</button>
       </div>
     </header>
 
-    <!-- ===== Game Board ===== -->
     <section class="board-wrap">
       <div id="board" class="board" role="grid" aria-label="Tic Tac Toe board"></div>
 
@@ -33,17 +31,14 @@
         <div class="status" id="status">Turn: <span id="turn">X</span></div>
       </div>
 
-      <p class="note">💡 Tip: Tap a square to play. Scores persist until refresh.</p>
+      <p class="note">Tip: tap a square to play. Scores stay until refresh.</p>
     </section>
-  </main>
 
-  <!-- ===== Result Overlay ===== -->
-  <div id="resultScreen" class="result-screen hidden">
-    <div class="result-box">
-      <h2 id="resultMessage">Player X Wins!</h2>
-      <button id="newGameBtn" class="btn large">🎮 New Game</button>
-    </div>
-  </div>
+    <!-- ✅ Added Developer Credit -->
+    <footer class="footer">
+      <p>Developed by <strong>RanjanBabu</strong></p>
+    </footer>
+  </main>
 
   <script src="script.js"></script>
 </body>
